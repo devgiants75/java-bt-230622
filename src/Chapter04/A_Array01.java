@@ -4,11 +4,14 @@ package Chapter04;
 // 같은 타입의 여러 변수를 하나의 집합으로 다루는 것
 // : 같은 타입의 데이터를 연속적으로 저장하고 쉽게 관리 가능
 // : 메모리 상에서 연속적인 공간을 차지 >> 배열 내의 특정 요소에 빠르게 접근 가능
-public class Array01 {
+
+// 배열을 선언만 할 경우에 배열의 기본값 : null(공간이 존재하지 않는다. 없다.)
+public class A_Array01 {
 
 	public static void main(String[] args) {
 		// '같은 타입'의 변수가 나열된 형태
-		// 배열은 '생성'을 해서 사용함. (생성해서 사용하는 변수 : 참조 변수)
+		// 배열은 '생성'을 해서 사용함. 
+		// (생성해서 사용하는 변수 : 참조 변수 ex. String, 배열, 객체)
 		// new 연산자로 생성
 		// 배열은 실제 데이터가 저장되는 것이 아니라
 		// 데이터 배열이 저장된 첫 번째 메모리 주소가 저장됨
@@ -101,17 +104,37 @@ public class Array01 {
 		}
 		System.out.println(sum2);
 		
+		// 배열의 특징
+		// 1. 배열은 한 번 생성되면, 그 크기를 변경할 수 없습니다.
+		// 2. 배열은 참조 타입, 동적으로 메모리가 할당.
+		// 3. 배열의 모든 요소는 같은 자료형이어야 한다.
 		
+		// 최대값과 최소값 찾기
+		int[] numbers2 = {1, 3, 5, 7, 9, 2, 4, 6, 8};
+        int max = numbers2[0];
+        int min = numbers2[0];
+        
+		// for 반복문 사용
+		// if 조건문 
 		
+		// 조건식(최대값): 배열을 반복하면서 각각의 요소(numbers[i]가 max보다 클 경우)
+		// max = numbers[i] 재할당
 		
+		// 조건식(최소값): 배열을 반복하면서 각각의 요소(numbers[i]가 min보다 작을 경우)
+		// min = numbers[i] 재할당
 		
-		
-		
-		
-		
-		
-		
-
+		// 출력
+		// Max: 9
+		// Min: 1
+        for (int i = 1; i < numbers2.length; i++) {
+            if (numbers2[i] > max) {
+                max = numbers2[i];
+            } 
+            if (numbers2[i] < min) {
+                min = numbers2[i];
+            }
+        }
+        System.out.println("Max: " + max);
+        System.out.println("Min: " + min);
 	}
-
 }
