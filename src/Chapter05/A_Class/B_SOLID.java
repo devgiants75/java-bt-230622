@@ -1,4 +1,4 @@
-package Chapter05;
+package Chapter05.A_Class;
 
 // SOLID 원칙: 객체지향 프로그래밍 설계 원칙
 // 소프트웨어의 유지보수성, 확장성, 재사용성을 향상

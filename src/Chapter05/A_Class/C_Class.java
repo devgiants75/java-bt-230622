@@ -1,4 +1,4 @@
-package Chapter05;
+package Chapter05.A_Class;
 
 // 객체(Object): 우리 실생활에 존재하는 모든 것
 // 				상태를 표현할 수 있고 우리가 행동으로 실행할 수 있는 모든 것

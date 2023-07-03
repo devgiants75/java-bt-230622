@@ -1,4 +1,4 @@
-package Chapter05;
+package Chapter05.A_Class;
 // static
 // 메모리에 한 번만 할당되고 모든 객체가 공유하는 멤버를 정의할 수 있다.
 // : 정적멤버

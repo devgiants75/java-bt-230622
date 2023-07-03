@@ -1,4 +1,4 @@
-package Chapter05;
+package Chapter05.A_Class;
 
 // 인스턴스
 // 클래스를 통해서 만들어진 객체

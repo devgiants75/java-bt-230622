@@ -1,4 +1,4 @@
-package Chapter05;
+package Chapter05.A_Class;
 
 // 클래스
 class SmartPhone {

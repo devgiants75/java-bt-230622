@@ -1,4 +1,4 @@
-package Chapter05;
+package Chapter05.A_Class;
 
 class Dog {
 	// 인스턴스 변수
