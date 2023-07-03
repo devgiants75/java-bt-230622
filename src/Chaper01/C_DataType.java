@@ -1,4 +1,7 @@
 package Chaper01;
+
+import java.util.Scanner;
+
 // 데이터 타입
 // 각각의 데이터들은 자바에서 지정한 여러 종류의 타입이 존재
 // 기본적으로 정수형, 실수형, 문자형, 논리형이 존재
@@ -63,6 +66,84 @@ public class C_DataType {
 		boolean1 = false;
 		// is**, has**, flag
 		
+		// 배열(Array)
+		
+		// 동일한 타입의 여러 변수를 저장할 수 있는 컨테이너
+		// 크기가 고정(한 번 생성되면 크기를 변경할 수 없다.)
+		// new 연산자를 사용하여 생성
+		// 배열은 해당 변수에 실제 데이터가 저장되는 것이 아니라 배열이 저장된 첫 번째 메모리 주소가 저장
+		
+		// 배열 선언과 동시에 생성
+		int[] myArray = new int[5];
+		
+		// 문자열(String)
+		// String 클래스는 문자열을 나타내는 데 사용되는 클래스
+		// java.lang.String 패키지에 속해 있다.
+		// 많은 메서드를 활용하여 문자열 조작이 편리
+		
+		// 문자열 선언
+		String myString;
+		
+		// 문자열 생성
+		myString = new String();
+		
+		// 문자열 선언과 동시에 생성
+		String myString2 = new String();
+		
+		// 문자열 초기화
+		myString = "Hello ";
+		myString2 = "String!";
+		
+		// 불변성(Immutability)
+		// 한 번 생성된 String객체는 그 값을 변경할 수 X
+		// String에 변형을 할 경우, 새로운 String 객체가 생성되고 기존 객체는 변경되지 X
+		
+		// 문자열 주요 기능과 메서드
+		
+		// 1. 문자열 결합
+		// + 연산자 || concat(String str)
+		System.out.println(myString + myString2);
+		
+		// 2. 문자열 비교
+		// equals(Object obj)메서드를 사용해서 두 문자열의 동일성을 확인 가능
+		// compareTo(Str1, Str2)
+		boolean bool = myString.equals(myString2);
+		System.out.println(bool); // false
+		
+		// 3. 문자열 길이
+		// length()메서드를 사용해 문자열의 길이를 확인 가능
+		
+		// 4. 문자열의 변환
+		// toLowerCase() : 전부 다 소문자로 변환
+		// toUpperCase() : 전부 다 대문자로 변환
+		// toString() : 문자열로 변환
+		System.out.println(myString.toUpperCase());
+		
+		// 5. 부분 문자열
+		String introduce = "Hello my name is SeungAh";
+		// substring(int beginIndex)
+		// substring(int beginIndex, int endIndex);
+		System.out.println(introduce.substring(10));
+		System.out.println(introduce.substring(10, 13));
+		
+		// 참조 데이터 타입 (Reference types)
+
+		// 객체의 참조 (즉, 메모리 주소)를 저장한다. 
+		// 이들은 클래스, 인터페이스, 배열, 열거형 등을 포함하며, null 값을 가질 수 있다. 
+		// "클래스 타입"이라고도 한다.
+
+		// 모든 클래스 및 배열 타입은 참조 데이터 타입에 해당하며, 
+		// `new` 연산자를 사용하여 생성해야하는 모든 데이터타입이 이에 해당한다. 
+		// 이러한 타입의 변수는 객체 또는 배열에 대한 참조 (즉, 주소)를 저장한다.
+
+		String str = "Hello, World!";
+		Scanner scanner = new Scanner(System.in);
+
+		// 참조 데이터 타입의 기본값은 `null`이며, 
+		// 이는 아직 어떤 객체도 참조하지 않음을 의미한다.(주소만 있고 데이터가 X)
+		// 참조 데이터 타입의 변수를 사용하기 전에 반드시 객체를 할당해야 한다. 
+		// 그렇지 않으면 `NullPointerException`이 발생한다.
+
 	}
 
 }
