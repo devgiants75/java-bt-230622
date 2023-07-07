@@ -6,7 +6,7 @@ package Chapter05.C_Constructor;
 class Food {
 	private String name;
 	private int price;
-	private int stock;
+	private int stock; 
 	
 	// 기본 생성자
 	Food() { }
