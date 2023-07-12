@@ -12,11 +12,14 @@ public class Main {
 	public static void main(String[] args) {
 		ComputerRoom myRoom = new ComputerRoom();
 		
-		myRoom.computer1 = new Samsung(); // Samsung computer1
-		myRoom.computer2 = new Samsung(); // Samsung computer2
+//		myRoom.computer1 = new Samsung(); // Samsung computer1
+//		myRoom.computer2 = new Samsung(); // Samsung computer2
 		
 //		myRoom.computer1 = new MacOs();
 //		myRoom.computer2 = new MacOs();
+		
+		myRoom.computer1 = new Computer(); // Samsung computer1
+		myRoom.computer2 = new Computer(); // Samsung computer2
 		
 		myRoom.allPowerOn();
 		myRoom.allPowerOff();
