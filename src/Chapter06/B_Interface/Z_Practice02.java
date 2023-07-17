@@ -10,8 +10,37 @@ package Chapter06.B_Interface;
 // 해당 클래스에는 추상클래스를 상속 받아 구현한 play메소드와
 // Electronic 인터페이스 구현을 하는 turnOn, turnOff 메소드 작성
 
+interface Electronic {
+    void turnOn();
+    void turnOff();
+}
+
+abstract class MusicalInstrument {
+    public abstract void play();
+}
+
+class Synthesizer extends MusicalInstrument implements Electronic {
+    @Override
+    public void play() {
+        System.out.println("신시사이저를 연주합니다.");
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("신시사이저를 켭니다.");
+    }
+
+    @Override
+    public void turnOff() {
+        System.out.println("신시사이저를 끕니다.");
+    }
+}
+
 public class Z_Practice02 {
-	public static void main(String[] args) {
-		
-	}
+    public static void main(String[] args) {
+        Synthesizer synth = new Synthesizer();
+        synth.turnOn();   // 출력: 신시사이저를 켭니다.
+        synth.play();     // 출력: 신시사이저를 연주합니다.
+        synth.turnOff();  // 출력: 신시사이저를 끕니다.
+    }
 }
