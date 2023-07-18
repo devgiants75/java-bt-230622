@@ -9,8 +9,30 @@ package Chapter06.A_Abstract;
 
 // main 메소드에서 각각 구체 클래스의 play 메소드를 실행
 
+abstract class MusicalInstrument {
+    public abstract void play();
+}
+
+class Piano extends MusicalInstrument {
+    @Override
+    public void play() {
+        System.out.println("피아노를 연주합니다.");
+    }
+}
+
+class Violin extends MusicalInstrument {
+    @Override
+    public void play() {
+        System.out.println("바이올린을 연주합니다.");
+    }
+}
+
 public class Z_Practice02 {
-	public static void main(String[] args) {
-		
-	}
+    public static void main(String[] args) {
+        MusicalInstrument piano = new Piano();
+        MusicalInstrument violin = new Violin();
+
+        piano.play();   // 출력: 피아노를 연주합니다.
+        violin.play();  // 출력: 바이올린을 연주합니다.
+    }
 }
