@@ -7,5 +7,4 @@ public class Main {
 		BookView bookView = new BookView();
 		bookView.showMenu();
 	}
-
 }
